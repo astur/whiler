@@ -1,3 +1,7 @@
 {
-    "extends": "astur"
+    "extends": "astur",
+    "rules": {
+        "no-await-in-loop": "off",
+        "no-empty": "off"
+    }
 }
