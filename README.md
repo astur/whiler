@@ -1,6 +1,6 @@
 # whiler
 
-whiler description here
+Simple endless cycle. Like while(true) but async.
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
@@ -13,8 +13,11 @@ npm i whiler
 
 ## Usage
 
+Takes a function as a parameter and runs it in loop while function return a truthy value or promise of a truthy value. Resolves when function return a falsy value or promise of a falsy value. Rejects when function throws or rejects.
+
 ```js
 const whiler = require('whiler');
+whiler(someAsyncFunction).then(whatever);
 ```
 
 ## License
